@@ -1,18 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
-	// const[ selectedColor, setSelectedColor] = useState("red");
+export function Home() {
+	const [selectedColor, setSelectedColor] = useState("green");
+
 	return (
 		<div className="trafficLight">
-			<div className="light red glow"></div>
-			<div className="light orange"></div>
-			<div className="light green"></div>
+			<div 
+				onClick={() => setSelectedColor("red")}
+				className={
+					"light red" + (selectedColor === "red" ? " glow" : "")
+				}></div> 
+			<div
+				onClick={() => setSelectedColor("orange")} 
+				className={
+					"light orange" + (selectedColor === "orange" ? " glow" : "")
+				}></div>
+			<div 
+				onClick={() => setSelectedColor("green")}
+				className={
+					"light green" + (selectedColor === "green" ? "glow" : "")
+				}></div>
 		</div>
 	);
 };
 
-export default Home;
