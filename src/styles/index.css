@@ -10,18 +10,26 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+/* <div style={{backgroundImage: `url("https://cdn-images.motor.es/image/m/694w.webp/fotos-noticias/2019/02/hyundai-y-wayray-desarrollan-un-sistema-de-navegacion-con-tecnologia-holografica-201954383_1.jpg")`}}> */
+
+.backImg {
+    height: 1000px;
+    background-size: cover;
+    background-image: url("https://cdn-images.motor.es/image/m/694w.webp/fotos-noticias/2019/02/hyundai-y-wayray-desarrollan-un-sistema-de-navegacion-con-tecnologia-holografica-201954383_1.jpg");
+}
+  
 .stick{
     background: black;
     width: 20px;
     height: 100px;
-    margin-left: 560px;
+    margin-left: 660px;
 }
 .trafficLight{
     background: black;
     padding: 20px;
     border-radius: 20px;
     display: inline-block;
-    margin-left: 500px;
+    margin-left: 600px;
 }
 .light{
     width: 100px;
@@ -52,13 +60,21 @@
     box-Shadow: 0px 0px 35px 4px rgb(115, 255, 0);
 }
 .purpleButton{
-    float: inherit;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    padding: 20px;
     background: purple;
+    font-size: 18px;
     color: white;
 }
 .rainbowButton{
-    float: inherit;
+    position: absolute;
+    bottom: 8px;
+    left: 200px;
+    padding: 20px;
     background: linear-gradient(red,orange,green);
-    color: white;
+    font-size: 18px;
+    color: rgb(19, 5, 5);
 }
 

@@ -31,7 +31,7 @@ export function Home() {
 	}
 
 	return (
-		<div>
+		<div className="backImg">
 			<div className="stick"></div>
 			<div className="trafficLight">
 				<div 
