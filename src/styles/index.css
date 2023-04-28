@@ -46,8 +46,7 @@
     background: green;
 }
 .purple{
-    background: purple;
-    box-Shadow: 0px 0px 35px 4px rgb(255, 0, 234);
+    background: purple; 
 }
 .rglow{
     box-Shadow: 0px 0px 35px 4px rgb(255, 136, 0);
@@ -57,6 +56,9 @@
 }
 .gglow{
     box-Shadow: 0px 0px 35px 4px rgb(115, 255, 0);
+}
+.pglow{
+    box-Shadow: 0px 0px 35px 4px rgb(255, 0, 234);
 }
 .purpleButton{
     position: absolute;

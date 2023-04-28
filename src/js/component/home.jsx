@@ -28,6 +28,16 @@ export function Home() {
 		  setSelectedColor("green");
 		  setTimeout(() => setSelectedColor(originalColor), 1000);
 		}, 2000);
+
+		if (showPurpleLight===true) {
+			setTimeout(() => {
+				setSelectedColor("purple");
+				setTimeout(() => setSelectedColor(originalColor), 1000);
+			  }, 3000);
+			
+		}
+
+		
 	}
 
 	return (
@@ -49,7 +59,12 @@ export function Home() {
 					className={
 						"light green" + (selectedColor === "green" ? " gglow" : "")
 					}></div>
-				{showPurpleLight && <div className="light purple"></div>}
+				{showPurpleLight && <div 
+					onClick={() => setSelectedColor("purple")}
+					className={
+						"light purple" + (selectedColor === "purple" ? " pglow" : "")
+					}></div>
+					}
 			</div>
 			<button className="purpleButton" onClick={toggleDiv}>purple surprise!!</button>
 			<button className="rainbowButton" onClick={partyLights}>party lights!!</button>
